@@ -33,7 +33,7 @@ const TaskList = () => {
                 >
                     Completed
                 </button>
-            </div>  
+            </div>
             <ul className="space-y-2">
                 {filteredTasks.map(task => (
                     <li key={task.id} className="flex items-center justify-between p-2 border rounded">
