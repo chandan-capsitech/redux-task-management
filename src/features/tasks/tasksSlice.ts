@@ -8,6 +8,7 @@ interface TasksState {
     editingTaskId: string | null;
 }
 
+// load all tasks
 const loadTasks = (): Task[] => {
     const savedTasks = localStorage.getItem('tasks');
     return savedTasks ? JSON.parse(savedTasks) : [];
